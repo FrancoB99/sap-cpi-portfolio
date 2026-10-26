@@ -19,7 +19,7 @@ iFlow que valida identificaciones fiscales de clientes (CUIT/CNPJ/RFC) ruteando 
 ## Qué demuestra
 
 - Router vs Multicast: cuándo usar ruteo excluyente vs. fan-out paralelo
-- Local Integration Process para lógica reutilizable entre iFlows
+- Local Integration Process para encapsular la validación común dentro del iFlow (para compartir lógica entre iFlows distintos se usaría ProcessDirect o Script Collections)
 - Externalized Parameters para transporte Dev/QA/Prod sin tocar el diseño
 - Diseño DRY: las 3 ramas del Router convergen a un único script de validación en vez de triplicar lógica
 

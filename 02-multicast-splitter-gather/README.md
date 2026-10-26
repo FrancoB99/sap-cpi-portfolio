@@ -27,6 +27,7 @@ iFlow que recibe un batch de pedidos, los procesa en paralelo contra múltiples 
 ## Qué demuestra
 
 - Patrones EIP: Splitter, Multicast, Join, Gather (en dos niveles: por rama del Multicast y por pedido del Splitter)
+- Conversión JSON a XML dentro del iFlow para poder usar el Splitter nativo (el General Splitter solo soporta XPath), manteniendo JSON hacia afuera
 - Groovy: `JsonSlurper`, `XmlSlurper`, `StreamingMarkupBuilder`
 - Integración con un servicio externo real (ntfy.sh) y con mocks no-code (Beeceptor) para simular sistemas internos (WMS, Finanzas)
 - Manejo de fallos parciales: un pedido con crédito bloqueado no tira abajo el batch completo

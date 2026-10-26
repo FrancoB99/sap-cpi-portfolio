@@ -7,17 +7,18 @@ Portfolio de integraciones construidas en SAP Integration Suite (Cloud Integrati
 | # | Proyecto | Patrones / Skills |
 |---|---|---|
 | [01](./01-validacion-pedidos-rest) | Validación y transformación de pedidos REST/JSON | Content Modifier, Groovy (JsonSlurper/JsonBuilder), mapeo a nomenclatura SAP, Exception Subprocess |
-| [02](./02-multicast-splitter-gather) | Fan-out de pedidos (Order-to-Cash) | Splitter, Multicast, Join, Gather, Groovy (XmlSlurper, StreamingMarkupBuilder), integración con servicios externos reales |
-| [03](./03-oauth2-sftp-payroll) | Extracción de nómina con OAuth2 y entrega SFTP | OAuth2 Client Credentials, Security Material, Timer, archivo de ancho fijo con registros de control |
-| [04](./04-router-api-management) | Gateway de validación multi-país | Router, Local Integration Process, Externalized Parameters, API Management |
+| [02](./02-multicast-splitter-gather) | Fan-out de pedidos (Order-to-Cash) | Splitter, Multicast, Join, Gather, conversión JSON/XML, Groovy (XmlSlurper, StreamingMarkupBuilder), servicio externo real (ntfy.sh) |
+| [03](./03-oauth2-sftp-payroll) | Extracción batch con OAuth2 (simulado) y entrega SFTP | Security Material OAuth2 Client Credentials contra un servidor simulado, Timer, archivo de ancho fijo con registros de control |
+| [04](./04-router-api-management) | Gateway de validación multi-país | Router, Local Integration Process, Externalized Parameters |
+| [05](./05-odata-sftp-empleados) | Extracción de empleados desde un OData v2 real de SAP | OData v2 (SuccessFactors sandbox), API Key externalizada, fechas `/Date(ms)/`, archivo de ancho fijo, SFTP |
 
 ## Stack
 
-SAP Integration Suite (Cloud Integration) · Groovy · REST/JSON · XML · OAuth 2.0 · SFTP
+SAP Integration Suite (Cloud Integration) · Groovy · REST/JSON · OData v2 · XML · OAuth 2.0 · SFTP
 
 ## Sobre este portfolio
 
-Vengo de un perfil SAP PI/PO y arranqué este portfolio para documentar mi transición práctica a SAP Integration Suite (CPI). Cada proyecto incluye su propio README con la arquitectura, qué patrones demuestra y en qué estado está (probado vs. documentado a nivel conceptual).
+Vengo de un perfil SAP PI/PO y armé este portfolio para documentar mi transición práctica a SAP Integration Suite (CPI). Cada proyecto incluye su propio README con la arquitectura, qué patrones demuestra y en qué estado está (probado vs. simulado). Donde un sistema es simulado (mocks) o hay una limitación, está indicado en el README del proyecto.
 
 ## Contacto
 
